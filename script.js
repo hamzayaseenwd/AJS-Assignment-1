@@ -32,7 +32,7 @@ let cardArr = [
     "title": "Recycled Rubber Cheese",
     "price": 30,
     "description": "New ABC 13 9370, 13.3, 5th Gen CoreA5-8250U, 8GB RAM, 256GB SSD, power UHD Graphics, OS 10 Home, OS Office A & J 2016",
-    "image_url": "https://i.imgur.com/KeqG6r4.jpeg"
+    "image_url": "https://i.imgur.com/KeqG6r4.jpeg",
     }
 ];
 
@@ -45,7 +45,7 @@ for (let i = 0; i < cardArr.length; i++) {
   let title = cardArr[i].title;
   let description = cardArr[i].description;
   let id = cardArr[i].id;
-  //   console.log(image);
+    // console.log(image);
   cardCon.innerHTML += `
   <div class="card m-2" style="width: 18rem">
         <img
@@ -59,8 +59,7 @@ for (let i = 0; i < cardArr.length; i++) {
           <p class="card-text">
             ${description}
           </p>
-          <a href="#" class="btn btn-primary" onclick=(cart(${id}))>Add to Cart</a>
-        </div>
+          </div>
       </div>
   `;
 }
